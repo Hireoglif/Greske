@@ -1,0 +1,12 @@
+
+
+
+
+
+1.	Metoda ToString() trebalo bi napisati malim slovima "toString()", .
+2.	Izraz "static float finalResult" trebalo bi biti privatna promenljiva a ne javna. Mozda je bolje vratiti iz metode Calculate() umesto direktno.
+3.	U metodi Run() nije jasna zbog praznog izraza. Ukoliko se prosledi, program će pozvati evaluateExpression() i nastace greška. 
+4.	U metodi evaluateExpression() može da dođe do greške ako se prosledi izraz sa dva uzastopna operatora. 
+5.	U metodi evaluateExpression() može doći do greške ako se prosledi izraz sa nedozvoljenim karakterima, na primer slovima ili specijalnim simbolima. U ovom slučaju metoda će vratiti "ERROR". 
+6.	U metodi Calculate() može da dođe do greške ako se prosledi prazna lista brojeva ili operacija.Trebalo bi dodati proveru da li su liste prazne.
+7.	U metodi Calculate() nije jasno šta se dešava ako se prosledi izraz koji sadrži samo jedan broj. Tada će se postaviti vrednost promenljive finalResult i program će se završiti. 
